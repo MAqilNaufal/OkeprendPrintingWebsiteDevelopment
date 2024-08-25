@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title -->
+    <title>All Products - OkePrend</title>
+    <!-- Google Fonts Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Logo di tab -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Section 1-->
+
+    <!--Navbar-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="125px" />
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" style="color: #555">Home</a></li>
+            <li><a href="products.html" style="color: #555">Products</a></li>
+            <li><a href="about-us.html" style="color: #555">About Us</a></li>
+            <li><a href="contact-us.html" style="color: #555">Contact</a></li>
+            <li><a href="account.html" style="color: #555">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="assets/images/shopping-cart.png" alt="" width="30px" height="30px" />
+        </a>
+        <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <!-- Single Prodcut Details -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="assets/images/brosur.png" alt="" id="ProductImg" width="100%" height="100%" />
+
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="assets/images/brosursmol.png" width="100%" height="100%" alt="" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="assets/images/brosur2smol.png" width="100%" height="100%" alt="" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="assets/images/brosur3smol.png" width="100%" height="100%" alt="" class="small-img" />
+            </div>
+            <div class="small-img-col">
+              <img src="assets/images/brosur4smol.png" width="100%" height="100%" alt="" class="small-img" />
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <p>Home / Brosur</p>
+          <h1>Brosur</h1>
+          <h4>starts From Rp250k</h4>
+          <select name="" id="">
+            <option value="">Select Size</option>
+            <option value="">A5</option>
+            <option value="">A4</option>
+            <option value="">A3</option>
+          </select>
+          <input type="number" value="1" />
+          <a href="cart.html" class="btn">Add to Cart</a>
+          <h3>Product Details <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            A package of 500 sheets brocures, every amount <br />
+            you put in the order input will be multiplied by 500 sheets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Section 1 -->
+
+    <!-- judul  -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+      </div>
+    </div>
+
+    <!-- (Featured Products) -->
+    <div class="small-container">
+      <div class="row">
+        <!-- Konten 1-->
+        <div class="col-4">
+          <img src="assets/images/brosur.png" alt="" />
+          <h4>Brosur</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>starts From Rp250k</p>
+        </div>
+
+        <!-- Konten 2-->
+        <div class="col-4">
+          <img src="assets/images/sticker.png" alt="" />
+          <h4>Sticker</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>starts From Rp50k</p>
+        </div>
+
+        <!-- Konten 3-->
+        <div class="col-4">
+          <img src="assets/images/undangan.png" alt="" />
+          <h4>Undangan</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>starts From Rp100k</p>
+        </div>
+
+        <!-- Konten 4-->
+        <div class="col-4">
+          <img src="assets/images/businessCard.png" alt="" />
+          <h4>Kartu Bisnis</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>starts From Rp125k</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 7 (footer) -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="assets/images/logo.png" alt="" />
+            <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <a target="_blank" href="https://www.facebook.com">
+                <li>Facebook</li>
+              </a>
+              <a target="_blank" href="https://www.twitter.com">
+                <li>Twitter</li>
+              </a>
+              <a target="_blank" href="https://www.instagram.com">
+                <li>Instagram</li>
+              </a>
+              <a target="_blank" href="https://www.youtube.com">
+                <li>Youtube</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - Kelompok Tujuh Web</p>
+      </div>
+    </div>
+    <!-- Akhir Section 7 (footer) -->
+
+    <!-- Javascript -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- Javascript Product -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+
+      SmallImg[0].onclick = function () {
+        ProductImg.src = SmallImg[0].src;
+      };
+      SmallImg[1].onclick = function () {
+        ProductImg.src = SmallImg[1].src;
+      };
+      SmallImg[2].onclick = function () {
+        ProductImg.src = SmallImg[2].src;
+      };
+      SmallImg[3].onclick = function () {
+        ProductImg.src = SmallImg[3].src;
+      };
+    </script>
+  </body>
+</html>

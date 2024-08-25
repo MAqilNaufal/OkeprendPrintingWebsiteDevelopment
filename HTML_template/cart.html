@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title -->
+    <title>All Products - OkePrend</title>
+    <!-- Google Fonts Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Logo di tab -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Section 1-->
+
+    <!--Navbar-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="125px" />
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" style="color: #555">Home</a></li>
+            <li><a href="products.html" style="color: #555">Products</a></li>
+            <li><a href="about-us.html" style="color: #555">About Us</a></li>
+            <li><a href="contact-us.html" style="color: #555">Contact</a></li>
+            <li><a href="account.html" style="color: #555">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="assets/images/shopping-cart.png" alt="" width="30px" height="30px" />
+        </a>
+        <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+
+      <!-- Cart items -->
+      <div class="small-container cart-page">
+          <table>
+              <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+              </tr>
+              <tr>
+                  <td>
+                      <div class="cart-info">
+                          <img src="assets/images/brosur.png" alt="">
+                          <div>
+                          <p>Brosur</p>
+                          <small>Price: IDR 50k</small>
+                          <br>
+                          <a href="">Remove</a>
+                      </div>
+                      </div>
+                  </td>
+                  <td><Input type="number" value="1"></Input></td>
+                  <td>IDR 55k</td>
+              </tr>
+          </table>
+
+          <div class="total-price">
+              <table>
+                  <tr>
+                      <td>Subtotal</td>
+                      <td>IDR 55k</td>
+                  </tr>
+                  <tr>
+                      <td>Tax</td>
+                      <td>IDR 5k</td>
+                  </tr>
+                  <tr>
+                      <td>Total</td>
+                      <td>IDR 60k</td>
+                  </tr>
+              </table>
+          </div>
+
+      </div>
+    </div>
+
+
+    <!-- Section 7 (footer) -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and IOS Mobile Phone</p>
+            <div class="app-logo">
+              <img src="assets/images/play-store.png" alt="" />
+              <img src="assets/images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="assets/images/logo.png" alt="" />
+            <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - Kelompok Tujuh Web</p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

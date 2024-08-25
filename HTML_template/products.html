@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title -->
+    <title>All Products - OkePrend</title>
+    <!-- Google Fonts Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Logo di tab -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Section 1-->
+
+    <!--Navbar-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="" width="125px" />
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" style="color: #555">Home</a></li>
+            <li><a href="products.html" style="color: #555">Products</a></li>
+            <li><a href="about-us.html" style="color: #555">About Us</a></li>
+            <li><a href="contact-us.html" style="color: #555">Contact</a></li>
+            <li><a href="account.html" style="color: #555">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="assets/images/shopping-cart.png" alt="" width="30px" height="30px" />
+        </a>
+        <img src="assets/images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+
+    <!-- Akhir Section 1 -->
+
+    <!-- Section 3  -->
+    <!-- (Featured Products ) -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select name="" id="">
+          <option value="">Default Sorting</option>
+          <option value="">Sort by Price</option>
+          <option value="">Sort by Popularity</option>
+          <option value="">Sort by Rating</option>
+          <option value="">Sort by Sale</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <!-- Konten 1-->
+        <div class="col-4">
+          <a href="product-details.html">
+            <img src="assets/images/brosur.png" alt="" />
+          </a>
+          <a href="product-details.html">
+            <h4>Brosur</h4>
+          </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp250k</p>
+        </div>
+
+        <!-- Konten 2-->
+        <div class="col-4">
+          <img src="assets/images/poster.png" alt="" />
+          <h4>Poster</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp100k</p>
+        </div>
+
+        <!-- Konten 3-->
+        <div class="col-4">
+          <img src="assets/images/sticker.png" alt="" />
+          <h4>Sticker</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp50k</p>
+        </div>
+
+        <!-- Konten 4-->
+        <div class="col-4">
+          <img src="assets/images/packaging.png" alt="" />
+          <h4>Rice Box</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp200k</p>
+        </div>
+
+        <!-- Konten 5-->
+        <div class="col-4">
+          <img src="assets/images/undangan.png" alt="" />
+          <h4>Undangan</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp100k</p>
+        </div>
+
+        <!-- Konten 6-->
+        <div class="col-4">
+          <img src="assets/images/product_menu.png" alt="" />
+          <h4>Menu</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp50k</p>
+        </div>
+
+        <!-- Konten 7-->
+        <div class="col-4">
+          <img src="assets/images/businessCard.png" alt="" />
+          <h4>Kartu Bisnis</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+
+        <!-- Konten 8-->
+        <div class="col-4">
+          <img src="assets/images/boxMartabak.png" alt="" />
+          <h4>Box Martabak</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+
+        <!-- Konten 9-->
+        <div class="col-4">
+          <img src="assets/images/coverBuku.png" alt="" />
+          <h4>Cover Buku</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+
+        <!-- Konten 10-->
+        <div class="col-4">
+          <img src="assets/images/paperbag.png" alt="" />
+          <h4>Paper Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+
+        <!-- Konten 11-->
+        <div class="col-4">
+          <img src="assets/images/idcard.png" alt="" />
+          <h4>ID Card</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+
+        <!-- Konten 12-->
+        <div class="col-4">
+          <img src="assets/images/productbox.png" alt="" />
+          <h4>Product Box</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Starts From Rp125k</p>
+        </div>
+      </div>
+
+      <!--
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+      -->
+    </div>
+    <!-- Akhir Section 3  -->
+
+    <!-- Section 7 (footer) -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="assets/images/logo.png" alt="" />
+            <p>Our Purpose is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <a target="_blank" href="https://www.facebook.com">
+                <li>Facebook</li>
+              </a>
+              <a target="_blank" href="https://www.twitter.com">
+                <li>Twitter</li>
+              </a>
+              <a target="_blank" href="https://www.instagram.com">
+                <li>Instagram</li>
+              </a>
+              <a target="_blank" href="https://www.youtube.com">
+                <li>Youtube</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2022 - Kelompok Tujuh Web</p>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if ((MenuItems.style.maxHeight = "0px")) {
+          MenuItems.style.maxHeight == "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
